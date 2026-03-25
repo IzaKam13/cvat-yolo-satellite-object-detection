@@ -1,2 +1,15 @@
-# cvat-yolo-satellite-object-detection
-End-to-end object detection project using YOLOv8 on satellite imagery: CVAT annotation, dataset preparation, model training, and evaluation with detailed error analysis (mAP, PR curves, confusion matrix).
+# CVAT YOLO Satellite Object Detection
+
+
+## Dataset Source
+
+This project is based on the SkySeaLand Satellite Object Detection Dataset  
+(Source: Mendeley Data, https://data.mendeley.com/datasets/d42n3cp86p/3).
+
+The original dataset contains four object classes:
+- airplane
+- boat
+- ship
+- car
+
+For this project, a subset of 350 images was selected and prepared for YOLO object detection.
