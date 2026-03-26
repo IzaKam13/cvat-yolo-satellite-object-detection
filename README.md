@@ -12,4 +12,8 @@ The original dataset contains four object classes:
 - ship
 - car
 
-For this project, a subset of 350 images was selected and prepared for YOLO object detection.
+## Notes
+
+- The full dataset is not included in this repository.
+- For this project, a subset of 350 images was selected, manually annotated using CVAT, and prepared for YOLO object detection.
+- Use `pipeline.py` to prepare the dataset for training.
