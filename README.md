@@ -47,7 +47,17 @@ CVAT-YOLO-Satellite-Object-Detection/
 │   └── sample/
 │
 ├── outputs/
+│   ├── weights/
+│       ├── best.pt
 │   └── class_distribution.png
+│   ├── confusion_matrix.png
+│   ├── confusion_matrix_normalized.png
+│   ├── f1_curve.png
+│   ├── gt_example_1.jpg
+│   ├── gt_example_2.jpg
+│   ├── pr_curve.png
+│   ├── pred_example_1.jpg
+│   └── pred_example_2.jpg
 │
 ├── src/
 │   ├── pipeline.py
