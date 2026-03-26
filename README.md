@@ -27,9 +27,9 @@ CVAT-YOLO-Satellite-Object-Detection/
 │   ├── train.py
 │   └── evaluate.py
 │
-├── .gitignore
-├── requirements.txt
-└── README.md
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 
