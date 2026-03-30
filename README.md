@@ -120,7 +120,7 @@ CVAT-YOLO-Satellite-Object-Detection/
 
 <p align="center">
   <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/confusion_matrix.png" width="60%">
-</p
+</p>
 
 ### Qualitative Results
 
@@ -153,8 +153,8 @@ Total objects: 2524
 ### Interpretation
 
 - Dataset is **imbalanced**:
-  - Airplanes dominate
-  - Ships are underrepresented
+- Airplanes dominate
+- Ships are underrepresented
  
 <p align="center">
   <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/class_distribution.png" width="60%">
