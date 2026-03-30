@@ -119,7 +119,7 @@ CVAT-YOLO-Satellite-Object-Detection/
 ### Confusion Matrix
 
 <p align="center">
-  <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/confusion_matrix.png" width="60%">
+  <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/confusion_matrix.png" width="70%">
 </p>
 
 ### Qualitative Results
