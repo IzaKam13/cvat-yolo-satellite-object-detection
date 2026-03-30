@@ -121,9 +121,32 @@ CVAT-YOLO-Satellite-Object-Detection/
 
 ## Dataset Analysis
 
+### Class Distribution
+
+- airplane: 1046
+- car: 890
+- boat: 346
+- ship: 242
+
+Total objects: 2524
+
+### Interpretation
+
+- Dataset is **imbalanced**:
+  - Airplanes dominate
+  - Ships are underrepresented
+
+Impact:
+- Model performs best on airplanes
+- Lower recall for ships due to fewer examples
 
 ## Key Insights
 
+- Data quality (annotation consistency) strongly impacts performance
+- Class imbalance affects minority classes (ships, boats)
+- YOLOv8n provides strong baseline even with small dataset
+- Confidence threshold tuning is critical (optimal ~0.27)
+- Dense object scenes remain challenging (overlapping boxes)
 
 ## Installation
 
@@ -135,6 +158,25 @@ pip install -r requirements.txt
 
 ## Future Improvements
 
+- Increase dataset size (especially ships and boats)
+- Apply data augmentation (rotation, scaling, noise)
+- Try larger models (YOLOv8m / YOLOv8l)
+- Hyperparameter tuning (learning rate, batch size)
+- Use class balancing techniques
+- Improve annotation consistency
+- Add tracking or segmentation (Mask R-CNN / YOLOv8-seg)
+
+## Why This Project Matters
+
+This project demonstrates practical experience with:
+
+- Real-world annotation tools (CVAT)
+- Dataset engineering and preprocessing
+- Training deep learning models (YOLOv8)
+- Model evaluation and interpretation
+- Handling class imbalance and noisy data
+
+It reflects a production-oriented computer vision workflow.
 
 ## License
 This project uses external dataset sources (SkySeaLand Satellite Object Detection Dataset, https://data.mendeley.com/datasets/d42n3cp86p/3). Please refer to the dataset provider for licensing details.
