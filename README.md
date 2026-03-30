@@ -105,8 +105,6 @@ CVAT-YOLO-Satellite-Object-Detection/
 
 - Best overall F1-score: **0.72 at confidence ≈ 0.27**
 
-### Performance Curves
-
 <p align="center">
   <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/f1_curve.png" width="49%">
    <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/pr_curve.png" width="49%">
@@ -117,7 +115,29 @@ CVAT-YOLO-Satellite-Object-Detection/
   - Similar visual appearance
   - Smaller object size
   - Dense object grouping
+ 
+### Confusion Matrix
 
+<p align="center">
+  <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/confusion_matrix.png" width="60%">
+</p
+
+### Qualitative Results
+
+Comparison between ground truth annotations and model predictions:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/IzaKam13/cvat-yolo-satellite-object-detection/main/outputs/gt_example_1.jpg" width="45%">
+  <img src="https://raw.githubusercontent.com/IzaKam13/cvat-yolo-satellite-object-detection/main/outputs/pred_example_1.jpg" width="45%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/IzaKam13/cvat-yolo-satellite-object-detection/main/outputs/gt_example_2.jpg" width="45%">
+  <img src="https://raw.githubusercontent.com/IzaKam13/cvat-yolo-satellite-object-detection/main/outputs/pred_example_2.jpg" width="45%">
+</p>
+
+- Left: Ground Truth (CVAT annotations)  
+- Right: Model Predictions (YOLOv8)
 
 ## Dataset Analysis
 
@@ -135,6 +155,10 @@ Total objects: 2524
 - Dataset is **imbalanced**:
   - Airplanes dominate
   - Ships are underrepresented
+ 
+<p align="center">
+  <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/class_distribution.png" width="60%">
+</p>
 
 Impact:
 - Model performs best on airplanes
