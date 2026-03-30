@@ -35,7 +35,28 @@ https://data.mendeley.com/datasets/d42n3cp86p/3
 
 ## Pipeline 
 
+The project follows a structured end-to-end workflow:
 
+1. **Annotation (CVAT)**
+   - Manual bounding box annotation
+   - Export in YOLO format
+
+2. **Data Preparation**
+   - Automated train/val/test split (80/10/10)
+   - Directory structure creation
+   - `dataset.yaml` generation
+
+3. **Training (YOLOv8)**
+   - Model: YOLOv8n (lightweight baseline)
+   - Image size: 640
+   - Batch size: 16
+   - Epochs: 20
+
+4. **Evaluation**
+   - Precision-Recall curve
+   - F1-confidence analysis
+   - Confusion matrix
+   - Qualitative prediction inspection
 
 ## Project Structure
 
@@ -71,6 +92,31 @@ CVAT-YOLO-Satellite-Object-Detection/
 
 
 ## Results
+
+### Quantitative Performance
+
+| Class     | mAP@0.5 |
+|----------|--------|
+| airplane | 0.881 |
+| boat     | 0.689 |
+| ship     | 0.648 |
+| car      | 0.823 |
+| **Overall** | **0.760** |
+
+- Best overall F1-score: **0.72 at confidence ≈ 0.27**
+
+### Performance Curves
+
+<p align="center">
+  <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/f1_curve.png" width="49%">
+   <img src="https://github.com/IzaKam13/cvat-yolo-satellite-object-detection/blob/main/outputs/pr_curve.png" width="49%">
+</p>
+
+- Airplanes and cars show strong performance (high precision and recall)
+- Boats and ships are more challenging due to:
+  - Similar visual appearance
+  - Smaller object size
+  - Dense object grouping
 
 
 ## Dataset Analysis
